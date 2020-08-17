@@ -9,7 +9,7 @@
 <script>
 document.write('<h3>Estadisticas centro medico ñuñoa</h3>');
 
-// Mostrar en pantalla la primera y la última atención de cada listado, desplegando el rut del paciente con la previsión, separados de un guión (utilizar índices, ej. primera atención: Juan Pérez - Fonasa | última atención: Ana Gálvez - Isapre).
+// Declaración de arrays y objetos.
 
 var radiologia = [
     {hora: '11:00', especialista: 'Ignacio Schulz', paciente: 'Francisca Rojas', rut: '9878782-1', prevision: 'Fonasa'},
@@ -38,11 +38,28 @@ var dental = [
     {hora: '14:00', especialista: 'Raquel Villaseca', paciente: 'Ana Sepúlveda', rut: '14441281-0', prevision: 'Isapre'},
 ];
 
+// Imprime la cantidad de horas pedidas para el día por especialidad.
+
 document.write('Hay ' + radiologia.length + ' consultas agendadas en radiología ');
 document.write('| Hay ' + traumatologia.length + ' consultas agendadas en traumatología ');
 document.write('| Hay ' + dental.length + ' consultas agendadas en dental.');
 
+// Declara variables con texto de rut y previsión de la primera y última cita. 
 
+var especialidadA = 'Primera atención: ' + radiologia[0].rut + ' - ' + radiologia[0].prevision + ' | Última atención: ' + radiologia[radiologia.length - 1].rut + ' - ' + radiologia[radiologia.length - 1].prevision + '.';
+var especialidadB = 'Primera atención: ' + traumatologia[0].rut + ' - ' + traumatologia[0].prevision + ' | Última atención: ' + traumatologia[traumatologia.length - 1].rut + ' - ' + traumatologia[traumatologia.length - 1].prevision + '.';
+var especialidadC = 'Primera atención: ' + dental[0].rut + ' - ' + dental[0].prevision + ' | Última atención: ' + dental[dental.length - 1].rut + ' - ' + dental[dental.length - 1].prevision + '.';
+
+// Imprime la información de primera y última cita por especialidad.
+
+document.write(especialidadA + '\n' + especialidadB + '\n' + especialidadC);
+
+
+// console.log(a + '\n' + b + '\n' + c);
+
+// document.write('Primera atención: ' + radiologia[0].rut + ' - ' + radiologia[0].prevision + ' | Última atención: ' + radiologia[radiologia.length - 1].rut + ' - ' + radiologia[radiologia.length - 1].prevision + '.');
+// document.write('\n Primera atención: ' + traumatologia[0].rut + ' - ' + traumatologia[0].prevision + ' | Última atención: ' + traumatologia[traumatologia.length - 1].rut + ' - ' + traumatologia[traumatologia.length - 1].prevision + '. \n');
+// document.write('\n Primera atención: ' + dental[0].rut + ' - ' + dental[0].prevision + ' | Última atención: ' + dental[dental.length - 1].rut + ' - ' + dental[dental.length - 1].prevision + '. \n');
 </script>
 <body>
     
