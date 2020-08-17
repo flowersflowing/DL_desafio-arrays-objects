@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centro Médico Ñuñoa</title>
+</head>
+<script>
+document.write('<h3>Estadisticas centro medico ñuñoa</h3>');
+
+// Mostrar en pantalla la primera y la última atención de cada listado, desplegando el rut del paciente con la previsión, separados de un guión (utilizar índices, ej. primera atención: Juan Pérez - Fonasa | última atención: Ana Gálvez - Isapre).
+
+var radiologia = [
+    {hora: '11:00', especialista: 'Ignacio Schulz', paciente: 'Francisca Rojas', rut: '9878782-1', prevision: 'Fonasa'},
+    {hora: '11:30', especialista: 'Federico Subercaseaux', paciente: 'Pamela Estrada', rut: '15345241-3', prevision: 'Isapre'},
+    {hora: '15:00', especialista: 'Fernando Wurthz', paciente: 'Armando Ulloa', rut: '16445345-9', prevision: 'Isapre'},
+    {hora: '15:30', especialista: 'Ana María Godoy', paciente: 'Manuel Godoy', rut: '17666419-0', prevision: 'Fonasa'},
+    {hora: '16:00', especialista: 'Patricia Suazo', paciente: 'Ramón Ulloa', rut: '14989389-k', prevision: 'Fonasa'},
+];
+
+var traumatologia = [
+    {hora: '8:00', especialista: 'María Paz Altuzarra', paciente: 'Paula Sánchez', rut: '15554774-5', prevision: 'Fonasa'},
+    {hora: '10:00', especialista: 'Raúl Araya', paciente: 'Angélica Navas', rut: '15444147-9', prevision: 'Isapre'},
+    {hora: '10:30', especialista: 'María Arriagada', paciente: 'Ana Klapp', rut: '17879423-9', prevision: 'Isapre'},
+    {hora: '11:00', especialista: 'Alejandro Bobadilla', paciente: 'Felipe Mardones', rut: '1547423-6', prevision: 'Isapre'},
+    {hora: '11:30', especialista: 'Cecilia Budnik', paciente: 'Diego Marre', rut: '16554741-k', prevision: 'Fonasa'},
+    {hora: '12:00', especialista: 'Arturo Cavagnaro', paciente: 'Cecilia Méndez', rut: '9747535-8', prevision: 'Isapre'},
+    {hora: '12:30', especialista: 'Andrés Kanacri', paciente: 'Marcial Suazo', rut: '11254785-5', prevision: 'Isapre'},
+];
+
+var dental = [
+    {hora: '8:30', especialista: 'Andrea Zúñiga', paciente: 'Marcela Retamal', rut: '11123425-6', prevision: 'Isapre'},
+    {hora: '11:00', especialista: 'María Pía Zañartu', paciente: 'Ángel Muñóz', rut: '9878789-2', prevision: 'Isapre'},
+    {hora: '11:30', especialista: 'Scarlett Witting', paciente: 'Mario Kast', rut: '7998789-5', prevision: 'Fonasa'},
+    {hora: '13:00', especialista: 'Francisco von Teuber', paciente: 'Karin Fernández', rut: '18887662-k', prevision: 'Fonasa'},
+    {hora: '13:30', especialista: 'Eduardo Viñuela', paciente: 'Hugo Sánchez', rut: '17665461-4', prevision: 'Fonasa'},
+    {hora: '14:00', especialista: 'Raquel Villaseca', paciente: 'Ana Sepúlveda', rut: '14441281-0', prevision: 'Isapre'},
+];
+
+document.write('Hay ' + radiologia.length + ' consultas agendadas en radiología ');
+document.write('| Hay ' + traumatologia.length + ' consultas agendadas en traumatología ');
+document.write('| Hay ' + dental.length + ' consultas agendadas en dental.');
+
+
+</script>
+<body>
+    
+</body>
+</html>
